@@ -1,0 +1,109 @@
+---
+title: "Titanic"
+author: "Chinki"
+date: "June 6, 2017"
+output: word_document
+---
+Titanic Machine learning from Disaster
+Data Collection: source-https://www.kaggle.com/c/titanic/data Data has two group training and test. Data description Variable Definition Key survival Survival 0 = No, 1 = Yes pclass Ticket class 1 = 1st, 2 = 2nd, 3 = 3rd sex Sex Age Age in years
+sibsp # of siblings / spouses aboard the Titanic
+parch # of parents / children aboard the Titanic
+ticket Ticket number
+fare Passenger fare
+cabin Cabin number
+embarked Port of Embarkation C = Cherbourg, Q = Queenstown, S = Southampton
+
+I have two set of data. 
+```{r}
+#Reading the data
+training=read.csv("train.csv",na.strings = T)
+test=read.csv("test.csv",na.strings = T)
+```
+```{r}
+#Table of pclass 
+table(training$Sex,training$Survived,training$Pclass)
+```
+```{r}
+#Table of pclass and sex
+table(training$Pclass,training$Sex)
+```
+```{r}
+#Boxplot of age
+barplot(prop.table(table(training$Sex)),col = "blue")
+```
+```{r}
+barplot(prop.table(table(training$Survived)))
+```
+
+```{r}
+str(training)
+```
+```{r}
+str(test)
+```
+```{r}
+#Creating levels 
+training$Survived=factor(training$Survived,levels = c("0","1"),labels = c("survived","notsurvived"))
+```
+```{r}
+#checking for missing values 
+sapply(training,function(x) sum(is.na(x)))
+```
+```{r}
+#creating dummy Variables
+contrasts(training$Embarked)
+```
+```{r}
+#creating dummy Variables
+contrasts(test$Embarked)
+```
+
+```{r}
+#Creating dummy variables 
+contrasts(training$Sex)
+```
+```{r}
+#Creating dummy variables 
+contrasts(test$Sex)
+```
+
+```{r}
+#In tarining data set 177 missing values
+training$Age[is.na(training$Age)]=mean(training$Age,na.rm = T)
+test$Age[is.na(test$Age)]=mean(test$Age,na.rm = T)
+```
+```{r}
+train=training[c(2,3,5,6,7,8,10,12)]
+```
+```{r}
+#Logistic Regression model
+result=glm(Survived~.,family = binomial(link = "logit"),data = train,control = list(maxit = 1500))
+summary(result)
+```
+```{r}
+anova(result,test="Chisq")
+```
+Pclass , sex , age and sibsp is the significant variable.
+```{r}
+#Test data selection
+t=test[c(2,4,5,6,7,9,11)]
+```
+```{r}
+#Fitted value
+fitted_result=predict(result,t,type="response")
+```
+```{r}
+#Checking for survived or not survived 
+fitted=ifelse(fitted_result>0.5,1,0)
+output=data.frame(test$PassengerId,fitted)
+```
+```{r}
+library(xlsx)
+write.xlsx(output,file="output.xlsx")
+
+```
+
+
+
+
+
