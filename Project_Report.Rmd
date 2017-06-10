@@ -1,0 +1,332 @@
+---
+title: "Project Report"
+author: "Chinki"
+date: "May 20, 2017"
+output: word_document
+---
+
+Data Description:
+
+Source: https://archive.ics.uci.edu/ml/datasets/Auto+MPG The data concerns city-cycle fuel consumption in miles per gallon, to be predicted in terms of 3 multivalued discrete and 5 continuous attributes. Attribute Information:
+1.	mpg: continuous
+2.	cylinders: multi-valued discrete
+3.	displacement: continuous
+4.	horsepower: continuous
+5.	weight: continuous
+6.	acceleration: continuous
+7.	model year: multi-valued discrete
+8.	origin: multi-valued discrete
+9.	car name: string (unique for each instance)
+I am taking MPG as y variable and other x variables. I will use regression technique to predict MPG.
+MPG is miles per galaons.
+
+```{r}
+#Reading the data from the downloaded folder 
+Car_MPG=read.table("C:/Computational Statistics/3rd Quater/Regression/Project/auto-mpg.data.txt",na.strings = T)
+#Giving header to the data set
+colnames(Car_MPG)=c("mpg","cylinders","displacement","horsepower","weight","acceleration","model","origin","car_name")
+
+```
+
+```{r}
+#Getting structure of the dataset
+str(Car_MPG)
+```
+```{r}
+# Horsepower has missing value so replacing ? into NA
+Car_MPG$horsepower[Car_MPG$horsepower=="?"]=NA
+
+#Checking for missing values
+table(is.na(Car_MPG$horsepower))
+
+```
+So in our data set, We have 6 missing values in the horsepower.We will deleted missing values form our dataset.
+```{r}
+#Missing values representation
+library(Amelia)
+missmap(Car_MPG, main = "Missing values vs observed")
+```
+
+```{r}
+#Deleting row containing NA value
+Car_MPG_final=Car_MPG[!(is.na(Car_MPG$horsepower)) , ]
+```
+Car_MPG_final is a subset of car_MPG without missing values.
+```{r}
+#Converting factor to numeric
+Car_MPG_final$horsepower=as.numeric(as.character(Car_MPG_final$horsepower))
+str(Car_MPG_final$horsepower)
+```
+
+
+Graphical Representation of the dataset
+```{r}
+#Creating boxplot
+par(mfrow=c(2,2))
+boxplot(Car_MPG_final[c(1,2)],col="Blue",main="Boxplot of mpg & cylinders")
+boxplot(Car_MPG_final[c(3,4)],col="blue",main="Boxplot of displacement & horsepower")
+boxplot(Car_MPG_final[c(5,6)],col="blue",main="Boxplot of weight & acceleration")
+boxplot(Car_MPG_final[c(7,8)],col="blue",main="Boxplot of model & origin")
+```
+From the boxplot,Weight, horsepower,mpg is symmetric and model and displacement is skewed.
+```{r}
+#Histograms of predicted variables 
+par(mfrow=c(3,2))
+hist(Car_MPG_final$mpg,col="red",main = "Histogram of the MPG of the car")
+hist(Car_MPG_final$displacement,col="red",main = "Histogram of the Displacement")
+hist(Car_MPG_final$horsepower,col="red",main = "Histogram of the Horsepower")
+hist(Car_MPG_final$weight,col="red",main = "Histogram of the Weight")
+hist(Car_MPG_final$acceleration,col="red",main = "Histogram of the Acceleration")
+```
+
+```{r}
+#Scatterplot of data variable MPG with other predictors 
+pairs(~mpg+displacement+horsepower+weight+acceleration,data = Car_MPG_final,col="blue")
+
+```
+Observations from scatterplot
+* Scatterplot of MPG and displacement is not in the linear trand, Inverse transformation can improve relationship between mpg and displacement
+* Scatterplot of MPG and horsepower represent the two bunch of data,look like divided into 2 groups.
+* Scatterplot of MPG and weight is not in the linear trand, Inverse transformation can improve relationship between mpg and weight
+* Scatterplot of MPG and acceleration represent square function realtionship.
+
+```{r}
+#Scatterplot matrix to observe correlation between responce & Predictor variables 
+library(car)
+scatterplotMatrix(~mpg+displacement+horsepower+weight+acceleration,data = Car_MPG_final,ellipse=("FALSE"),smooth=F,col="blue")
+
+```
+Displacement & weight are highly correlated negative correlation seem. horsepower & acceleration seems to have low correlation.
+```{r}
+#Getting correlations
+cor(Car_MPG_final[,c(1,3,4,5,6)])
+```
+Displacemnet & weight is highly correlated with the mpg.
+
+Lets start from AIC to selecte the correct model:
+
+```{r}
+#Null function( with only intercept)
+null_model=lm(mpg~1,data=Car_MPG_final)
+#Full model with all variables 
+Full_model=lm(mpg~weight+displacement+acceleration+horsepower+weight*displacement+weight*acceleration+weight*horsepower+displacement*acceleration+displacement*horsepower+acceleration*horsepower,data=Car_MPG_final)
+#Running step function
+step(null_model, scope=list(lower=null_model, upper=Full_model),
+direction="forward")
+
+
+```
+Low AIC model is  mpg ~ weight + horsepower + acceleration + displacement + 
+    weight:horsepower + horsepower:acceleration + weight:acceleration + 
+    horsepower:displacement.
+
+    
+```{r}
+#Running multiple linear regression
+lm_model1=lm(mpg ~ weight + horsepower + acceleration + displacement + 
+    weight:horsepower + horsepower:acceleration + weight:acceleration + 
+    horsepower:displacement ,data=Car_MPG_final)
+summary(lm_model1)
+```
+Intercept,weight, horsepower,dispalcment and interaction between horsepower & displacement are significant. Rsquare is 75.82%.
+
+Diagnostics of the model :
+Normalirty: 
+```{r}
+#Residuals of the model 
+lm_r1=residuals(lm_model1)
+#Fitted value of the model
+lm_f1=fitted.values(lm_model1)
+#QQ plots 
+qqnorm(lm_r1)
+qqline(lm_r1)
+```
+More points are divered from the line so lets look formal test for normality
+```{r}
+#Shapiro test for normality
+shapiro.test(lm_r1)
+```
+As w is greater than 95%, We can assume normality is true for the given data set.
+
+Constant Variance :
+```{r}
+#Residuals Vrs fitted plot
+plot(lm_r1,lm_f1)
+```
+Residuals vs fitted plot look like in a U shape. Lets do formal test
+```{r}
+#Formal test for constant variance 
+library(car)
+ncvTest(lm_model1)
+```
+As p value is less than 0.05,Reject null hypothesis and conclude that errors did not have constant variance.
+
+Outliers:
+```{r}
+#Formal test for outliers
+outlierTest(lm_model1)
+```
+As p value is less than 0.004, outlier is significant.It is safe to remove this outlier from the data point.
+```{r}
+#Influence plot of the model
+influencePlot(lm_model1)
+```
+We are getting 3 outliers,so I am planning to delete this outlier.
+```{r}
+#Deleting 3 outliers
+Car_MPG_final=Car_MPG_final[-c(14,388,395),]
+```
+
+As constant variance assumption is not valid for my dataset. Lets start with the transformation
+From the scatter plot shape, I am deciding my transformation.
+```{r}
+# inverse transformation for weight & displacment, square for acceleration & sqaure root for horsepower
+Car_MPG_final=cbind(Car_MPG_final,weight1=1/Car_MPG_final$weight)
+Car_MPG_final=cbind(Car_MPG_final,acceleration1=Car_MPG_final$acceleration^2)
+Car_MPG_final=cbind(Car_MPG_final,displacement1=1/Car_MPG_final$displacement) 
+Car_MPG_final=cbind(Car_MPG_final,horsepower1=sqrt(Car_MPG_final$horsepower))
+```
+Lets us run model
+```{r}
+#Regression model 
+lm_model2=lm(mpg ~ weight1 + horsepower1 + acceleration1 + displacement1 + 
+    weight1:horsepower1 + horsepower1:acceleration1 + weight1:acceleration1 + 
+    horsepower1:displacement1,data=Car_MPG_final)
+summary(lm_model2)
+```
+R square is almost same in this model as well.
+Diagnostics for this model:
+```{r}
+#Residuals of this model
+lm_r2=residuals(lm_model2)
+#Fitted value of this model 
+lm_f2=fitted.values(lm_model2)
+#Redisdual vs fitted plot
+plot(lm_r2,lm_f2)
+```
+It is more concentrated towards o. Error variance is not costant. As if observe the shape its cone so lets try transformation of y variable.
+
+I will decide transformation from the Boxcox.
+```{r}
+#Boxcox transformation
+library(MASS)
+boxcox(Car_MPG_final$mpg~Car_MPG_final$weight1+Car_MPG_final$displacement+Car_MPG_final$acceleration+Car_MPG_final$weight1*Car_MPG_final$displacement+Car_MPG_final$weight1*Car_MPG_final$acceleration+Car_MPG_final$displacement*Car_MPG_final$acceleration, lambda = seq(-1, 1, length = 20))
+```
+From the graph it is somewhat between -0.5 and 0.
+So i will try both log and 1/sqrt(y)
+
+```{r}
+#Transforming y variable
+Car_MPG_final=cbind(Car_MPG_final,mpg1=log(Car_MPG_final$mpg))
+Car_MPG_final=cbind(Car_MPG_final,mpg2=1/sqrt(Car_MPG_final$mpg))
+```
+
+Running Regression model
+```{r}
+#Regression model with y transfromation as log 
+lm_model3=lm(mpg1  ~ weight1 + horsepower1 + acceleration1 + displacement1 + 
+    weight1:horsepower1 + horsepower1:acceleration1 + weight1:acceleration1 + 
+    horsepower1:displacement1,data=Car_MPG_final)
+summary(lm_model3)
+
+```
+R square is 80.38%.
+
+Diagnostics
+Constant variance:
+```{r}
+#Residuals of the model
+lm_r3=residuals(lm_model3)
+#Fitted value of the model
+lm_f3=fitted.values(lm_model3)
+#Plot of residuals and fitted value 
+plot(lm_r3,lm_f3)
+```
+still we are not good for the constant variance assumption.
+Lets try another transformation
+
+```{r}
+#Regression model with y transfromation as i/sqrt(y) 
+lm_model4=lm(mpg2  ~ weight1 + horsepower1 + acceleration1 + displacement1 + 
+    weight1:horsepower1 + horsepower1:acceleration1 + weight1:acceleration1 + 
+    horsepower1:displacement1,data=Car_MPG_final)
+summary(lm_model4)
+```
+This model looks better than the previous model.
+Diagnostics:
+Normality:
+```{r}
+#Residual of the model
+lm_r4=residuals(lm_model4)
+#Fitted value of the model
+lm_f4=fitted.values(lm_model4)
+#Residuals & fitted value plot
+plot(lm_r4,lm_f4)
+```
+plot is scattered enoght to conclude constant variance.
+```{r}
+# Formal test for constant variance
+library(car)
+ncvTest(lm_model4)
+```
+As p-value is greter than 0.05, we are fail to reject null hypothesis and conclude that error has constant variance.
+Normality:
+```{r}
+#Normality plot
+qqnorm(lm_r4)
+qqline(lm_r4)
+```
+Normality seems ok. Lets try formal test for normality.
+```{r}
+#Shapiro test
+shapiro.test(lm_r4)
+```
+As w is greater than 95%, we will assume normality is satisfied.
+We have alredy worked with the outliers so we are good with the diagnostics.
+Model interpretation:
+
+
+Lets start check model preformance:
+Lets create random sample
+```{r}
+set.seed(123)
+train_sample <- sample(398, 300)
+```
+Creating training and test model:
+```{r}
+#Creating training and test sample
+Car_MPG_train=Car_MPG_final[train_sample,]
+Car_MPG_test=Car_MPG_final[-train_sample,]
+```
+Now we are going to train model on the training data.
+```{r}
+#Regression model on training data
+lm_model5=lm(mpg2  ~ weight1 + horsepower1 + acceleration1 + displacement1 + 
+    weight1:horsepower1 + horsepower1:acceleration1 + weight1:acceleration1 + 
+    horsepower1:displacement1,data=Car_MPG_train)
+summary(lm_model5)
+```
+
+
+```{r}
+#Prediction based on our model
+prediction=predict(lm_model5,Car_MPG_test)
+#As we transformed our y variable so getting accurate y variable 
+predic=1/(prediction*prediction)
+predic
+# Our prediction and test variable graph
+plot(Car_MPG_test$mpg~predic)
+abline(lm(Car_MPG_test$mpg~predic))
+```
+Our prediction and test points are in a stright line, only we have some points here and there so I will conclude my prediction model is accurate.
+
+```{r}
+MAE <- function(actual, predicted) {
+  mean(abs(actual - predicted))  
+}
+MAE(Car_MPG_test$mpg,predic)
+```
+
+
+
+
