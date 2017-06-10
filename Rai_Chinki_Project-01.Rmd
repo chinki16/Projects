@@ -1,0 +1,313 @@
+---
+title: "Project -1"
+author: "Chinki"
+date: "April 22, 2017"
+output: word_document
+---
+
+Forest type mapping Data set.
+source: UCI Machine Learning Repository
+
+Step-01: Collecting the data
+
+This data set contains training and testing data from a remote sensing study which mapped different forest types based on their spectral characteristics at visible-to-near infrared wavelengths, using ASTER satellite imagery. The output (forest type map) can be used to identify and/or quantify the ecosystem services (e.g. carbon storage, erosion protection) provided by the forest.
+
+Class: 's' ('Sugi' forest), 'h' ('Hinoki' forest), 'd' ('Mixed deciduous' forest), 'o' ('Other' non-forest land).
+
+Step-02: Exploring and Preparing the data
+
+```{r}
+#Reading the data
+Forest_train=read.csv("C:/Users/chink/Downloads/ForestTypes/testing.csv",na.strings = F)
+Forest_test=read.csv("C:/Users/chink/Downloads/ForestTypes/training.csv",na.strings = F)
+```
+```{r}
+#Examine the structure
+str(Forest_train)
+```
+```{r}
+str(Forest_test)
+```
+```{r}
+#Table of class
+table(Forest_train$class)
+```
+```{r}
+#Table of class
+table(Forest_test$class)
+```
+```{r}
+#Proportion of class variable
+round(prop.table(table(Forest_train$class))*100,digits = 1)
+```
+```{r}
+#Proportion of class variable 
+round(prop.table(table(Forest_test$class))*100,digits = 1)
+```
+```{r}
+#Summary of Forest_train
+summary(Forest_train[,c(2:27)])
+```
+```{r}
+#Summary of test dataset
+summary(Forest_test[,c(2:27)])
+```
+```{r}
+# create normalization function
+normalize <- function(x) {
+  return ((x - min(x)) / (max(x) - min(x)))
+}
+```
+```{r}
+Forest_train_n=as.data.frame(lapply(Forest_train[2:27],normalize))
+Forest_test_n=as.data.frame(lapply(Forest_test[2:27],normalize))
+```
+```{r}
+# Summary of test dataset
+summary(Forest_train_n$b2)
+```
+```{r}
+#Creating lables for training and test data
+Forest_train_labels=Forest_train[,1]
+Forest_test_labels=Forest_test[,1]
+```
+visualize the data using labels
+```{r}
+#Sactterplot of bi & b2
+plot(Forest_train$b1~Forest_train$b2,col="red")
+```
+```{r}
+pairs(~b1+b2+b3+b4+b5+b6+b7+b8+b9,data=Forest_train,col="Blue ")
+```
+```{r}
+#Sactterplot 
+pairs(~pred_minus_obs_H_b1+pred_minus_obs_H_b2+pred_minus_obs_H_b3+pred_minus_obs_H_b4+pred_minus_obs_H_b5+pred_minus_obs_H_b6+pred_minus_obs_H_b7+pred_minus_obs_H_b8,data=Forest_train,col="red")
+```
+```{r}
+library(car)
+scatterplotMatrix(~b1+b2+b3+b4+b5+b6+b7+b8+b9 | class,data=Forest_train)
+```
+```{r}
+scatterplotMatrix(~pred_minus_obs_H_b1+pred_minus_obs_H_b2+pred_minus_obs_H_b3+pred_minus_obs_H_b4+pred_minus_obs_H_b5+pred_minus_obs_H_b6+pred_minus_obs_H_b7+pred_minus_obs_H_b8,data=Forest_train)
+```
+```{r}
+#Boxplot of forest type in training and test data
+par(mfrow=c(2,2))
+plot(Forest_train$class,col="red")
+plot(Forest_test$class,col="blue")
+```
+
+Step 3: Training a model on the data
+
+```{r}
+library(class)
+Forest_test_pred=knn(train = Forest_train_n,test = Forest_test_n,cl=Forest_train_labels,k=5)
+head(Forest_test_n)
+```
+```{r}
+head(Forest_test_labels)
+```
+Step 4: Evaluating model performance
+
+```{r}
+library(gmodels)
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+Accuracy=(46+35+25+58)/198*100=82.83%
+
+Step 5: Improving model performance
+
+```{r}
+#Using Z score to improve model
+Forest_train_z=as.data.frame(scale(Forest_train[-1]))
+Forest_test_z=as.data.frame(scale(Forest_test[-1]))
+```
+```{r}
+# confirm that the transformation was applied correctly
+summary(Forest_train_z$b5)
+```
+```{r}
+# re-classify test cases
+Forest_test_pred=knn(train = Forest_train_z,test=Forest_test_z,cl=Forest_train_labels,k=5)
+# Create the cross tabulation of predicted vs. actual
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+Accuracy=(50+19+28+57)/198*100=77.78%
+Accuracy is not improving with the use of Z score.
+I am trying different k values with normalised data.
+```{r}
+#KNN model with K=1
+Forest_test_pred=knn(train = Forest_train_n,test = Forest_test_n,cl=Forest_train_labels,k=1)
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+```{r}
+#KNN model with K=3
+Forest_test_pred=knn(train = Forest_train_n,test = Forest_test_n,cl=Forest_train_labels,k=3)
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+```{r}
+#KNN model with K=5
+Forest_test_pred=knn(train = Forest_train_n,test = Forest_test_n,cl=Forest_train_labels,k=5)
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+```{r}
+#KNN model with K=7
+Forest_test_pred=knn(train = Forest_train_n,test = Forest_test_n,cl=Forest_train_labels,k=7)
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+```{r}
+#KNN model with K=9
+Forest_test_pred=knn(train = Forest_train_n,test = Forest_test_n,cl=Forest_train_labels,k=9)
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+```{r}
+#KNN model with K=11
+Forest_test_pred=knn(train = Forest_train_n,test = Forest_test_n,cl=Forest_train_labels,k=17)
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+```{r}
+#KNN model with K=35
+Forest_test_pred=knn(train = Forest_train_n,test = Forest_test_n,cl=Forest_train_labels,k=35)
+CrossTable(x=Forest_test_labels,y=Forest_test_pred,prop.chisq = FALSE)
+```
+Performing knn for different KNN values.It is clear that the k value of 3 and 1 has  more accuracy.
+
+K-Value	False Negative	False Positive	Accuracy
+K=1	22	10	83.84%
+K=3	20	11	84.34%
+K=5	22	13	82.32%
+K=7	25	10	81.82%
+K=9	23	13	81.82%
+K=17	28	17	76.77%
+K=35	48	23	64.14%
+
+
+Now lets run C5.0 Algorithm.
+```{r}
+#Getting summary of training data
+summary(Forest_train)
+```
+```{r}
+# look for class variable
+table(Forest_train$class)
+```
+```{r}
+table(Forest_test$class)
+```
+
+```{r}
+# check the proportion of class variable
+prop.table(table(Forest_train$class))
+```
+```{r}
+prop.table(table(Forest_test$class))
+```
+
+
+```{r}
+#Missing values
+library(Amelia)
+missmap(Forest_train, main="missing value vrs observed ")
+```
+# build the simplest decision tree
+```{r}
+library(C50)
+Forest_tree=C5.0(Forest_train[-1],Forest_train$class)
+# display simple facts about the tree
+Forest_tree
+# display detailed information about the tree
+summary(Forest_tree)
+```
+```{r}
+# create a factor vector of predictions on test data
+Forest_pred_tree=predict(Forest_tree,Forest_test)
+library(gmodels)
+CrossTable(Forest_test$class,Forest_pred_tree,prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE)
+```
+Accuracy 90.9%.
+Step 5: Improving model performance 
+
+```{r}
+## Boosting the accuracy of decision trees
+# boosted decision tree with 10 trials
+Forest_boost10=C5.0(Forest_train[-1],Forest_train$class,trails=10)
+Forest_boost10
+```
+```{r}
+#Getting summary of Forest_boost10
+summary(Forest_boost10)
+```
+```{r}
+Forest_boost10_pred=predict(Forest_boost10,Forest_test)
+CrossTable(Forest_test$class,Forest_boost10_pred,prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE)
+```
+Accuracy after applying boosting is also 90.9%.
+```{r}
+## Boosting the accuracy of decision trees
+# boosted decision tree with 10 trials
+Forest_boost20=C5.0(Forest_train[-1],Forest_train$class,trails=20)
+Forest_boost20
+```
+```{r}
+summary(Forest_boost20)
+```
+```{r}
+Forest_boost20_pred=predict(Forest_boost20,Forest_test)
+CrossTable(Forest_test$class,Forest_boost20_pred,prop.chisq = FALSE, prop.c = FALSE, prop.r = FALSE)
+```
+Same level of accuracy in 20 boosting also.
+Random Forest.
+```{r}
+library(caret)
+library(lattice)
+library(ggplot2)
+library(randomForest)
+```
+```{r}
+#Set.seed for getting the same output
+set.seed(300)
+#Creating random forest
+randomforest_forest <- randomForest(class ~ ., data = Forest_train)
+randomforest_forest
+```
+The randomForest() function creates an ensemble of 500 trees & 5 variable at each split.Estimated error rate is 16%
+
+Improving model performance:
+```{r}
+library(caret)
+ctrl <- trainControl(method = "repeatedcv",
+                     number = 10, repeats = 10)
+grid_rf <- expand.grid(.mtry = c(5, 10, 15, 20,25))
+set.seed(300)
+m_rf <- train(class ~ ., data = Forest_train, method = "rf",
+              metric = "Kappa", trControl = ctrl,
+              tuneGrid = grid_rf)
+m_rf
+
+```
+Accuracy for is 84.92%.
+```{r}
+# auto-tune a boosted C5.0 decision tree
+grid_c50 <- expand.grid(.model = "tree",
+                        .trials = c(10, 20, 30, 40),
+                        .winnow = "FALSE")
+set.seed(300)
+library(C50)
+m_c50 <- train(class ~ ., data = Forest_train, method = "C5.0",
+                metric = "Kappa", trControl = ctrl,
+               tuneGrid = grid_c50)
+m_c50
+```
+Accuracy is not increasing.
+
+
+Summary
+
+The dataset is already divided into 2 training & test data. I initially started from KNN algorithm & tried to improve model accuracy with the help of z score & from diffent k values.
+Then I ran  C5.0 classification algorithm and random forest for improving accuracy of the model.I am getting accuracy 90.9% from C5.0 algorithm for 20 boosting which is good.C5.0 algorithm is working good for this dataset.
+
+
+
+
+
+
