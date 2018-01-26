@@ -1,0 +1,2360 @@
+From: "Saved by Internet Explorer 11"
+Subject: SAS Output
+Date: Wed, 8 Nov 2017 07:26:53 -0800
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file://C:\Users\chink\AppData\Local\Temp\SAS Temporary Files\_TD8288_DESKTOP-U1GNR6K_\sashtml.htm
+X-MimeOLE: Produced By Microsoft MimeOLE
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content=3D"IE=3D5.0000" =
+http-equiv=3D"X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001">
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-type>
+<STYLE type=3Dtext/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; PADDING-TOP: 4pt; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: 'SAS =
+Monospace', 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px =
+solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: =
+normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; =
+BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: =
+#fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: =
+8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; =
+BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; =
+MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: =
+#c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: =
+#c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 1pt solid; =
+BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: =
+1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: =
+#000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: =
+#000000 0px solid
+}
+.linecontent {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#fafbfe
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: =
+1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: =
+normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; =
+MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: =
+left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier, monospace; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; =
+BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c1c1c1 0px solid; =
+BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: =
+1px; BORDER-LEFT: 0px
+}
+.middle_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: =
+1px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.bottom_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-TOP: =
+1px; BORDER-LEFT: 0px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+<!--=20
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=3Dbody onload=3Dstartup() onunload=3Dshutdown()>
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+<!--=20
+var _info =3D navigator.userAgent
+var _ie =3D (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 =3D _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=3Dbranch><A name=3DIDX></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">Unquie =
+Zipcodes</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The FREQ Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Freq: NLevels" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Number of =
+Variable=20
+    Levels</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Variable</TH>
+    <TH class=3D"r b header" scope=3Dcol>Levels</TH>
+    <TH class=3D"r b header" scope=3Dcol>Missing Levels</TH>
+    <TH class=3D"r b header" scope=3Dcol>Nonmissing =
+Levels</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>zipcode</TH>
+    <TD class=3D"r data">46</TD>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">45</TD></TR></TBODY></TABLE></DIV></DIV><BR><A =
+name=3DIDX1></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Freq: One-Way Frequencies" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>zipcode</TH>
+    <TH class=3D"r b header" scope=3Dcol>Frequency</TH>
+    <TH class=3D"r b header" scope=3Dcol>Percent</TH>
+    <TH class=3D"r b header" scope=3Dcol>Cumulative<BR>Frequency</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Cumulative<BR>Percent</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>88888</TH>
+    <TD class=3D"r data">8</TD>
+    <TD class=3D"r data">0.02</TD>
+    <TD class=3D"r data">8</TD>
+    <TD class=3D"r data">0.02</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94000</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">9</TD>
+    <TD class=3D"r data">0.03</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94014</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">0.01</TD>
+    <TD class=3D"r data">11</TD>
+    <TD class=3D"r data">0.03</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94101</TH>
+    <TD class=3D"r data">154</TD>
+    <TD class=3D"r data">0.46</TD>
+    <TD class=3D"r data">165</TD>
+    <TD class=3D"r data">0.50</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94102</TH>
+    <TD class=3D"r data">1349</TD>
+    <TD class=3D"r data">4.05</TD>
+    <TD class=3D"r data">1514</TD>
+    <TD class=3D"r data">4.55</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94103</TH>
+    <TD class=3D"r data">861</TD>
+    <TD class=3D"r data">2.59</TD>
+    <TD class=3D"r data">2375</TD>
+    <TD class=3D"r data">7.14</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94104</TH>
+    <TD class=3D"r data">39</TD>
+    <TD class=3D"r data">0.12</TD>
+    <TD class=3D"r data">2414</TD>
+    <TD class=3D"r data">7.25</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94105</TH>
+    <TD class=3D"r data">199</TD>
+    <TD class=3D"r data">0.60</TD>
+    <TD class=3D"r data">2613</TD>
+    <TD class=3D"r data">7.85</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94106</TH>
+    <TD class=3D"r data">43</TD>
+    <TD class=3D"r data">0.13</TD>
+    <TD class=3D"r data">2656</TD>
+    <TD class=3D"r data">7.98</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94107</TH>
+    <TD class=3D"r data">998</TD>
+    <TD class=3D"r data">3.00</TD>
+    <TD class=3D"r data">3654</TD>
+    <TD class=3D"r data">10.98</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94108</TH>
+    <TD class=3D"r data">854</TD>
+    <TD class=3D"r data">2.57</TD>
+    <TD class=3D"r data">4508</TD>
+    <TD class=3D"r data">13.54</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94109</TH>
+    <TD class=3D"r data">2273</TD>
+    <TD class=3D"r data">6.83</TD>
+    <TD class=3D"r data">6781</TD>
+    <TD class=3D"r data">20.37</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94110</TH>
+    <TD class=3D"r data">3240</TD>
+    <TD class=3D"r data">9.73</TD>
+    <TD class=3D"r data">10021</TD>
+    <TD class=3D"r data">30.11</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94111</TH>
+    <TD class=3D"r data">332</TD>
+    <TD class=3D"r data">1.00</TD>
+    <TD class=3D"r data">10353</TD>
+    <TD class=3D"r data">31.10</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94112</TH>
+    <TD class=3D"r data">2387</TD>
+    <TD class=3D"r data">7.17</TD>
+    <TD class=3D"r data">12740</TD>
+    <TD class=3D"r data">38.28</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94113</TH>
+    <TD class=3D"r data">200</TD>
+    <TD class=3D"r data">0.60</TD>
+    <TD class=3D"r data">12940</TD>
+    <TD class=3D"r data">38.88</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94114</TH>
+    <TD class=3D"r data">1741</TD>
+    <TD class=3D"r data">5.23</TD>
+    <TD class=3D"r data">14681</TD>
+    <TD class=3D"r data">44.11</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94115</TH>
+    <TD class=3D"r data">1462</TD>
+    <TD class=3D"r data">4.39</TD>
+    <TD class=3D"r data">16143</TD>
+    <TD class=3D"r data">48.50</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94116</TH>
+    <TD class=3D"r data">1777</TD>
+    <TD class=3D"r data">5.34</TD>
+    <TD class=3D"r data">17920</TD>
+    <TD class=3D"r data">53.84</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94117</TH>
+    <TD class=3D"r data">1954</TD>
+    <TD class=3D"r data">5.87</TD>
+    <TD class=3D"r data">19874</TD>
+    <TD class=3D"r data">59.71</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94118</TH>
+    <TD class=3D"r data">1595</TD>
+    <TD class=3D"r data">4.79</TD>
+    <TD class=3D"r data">21469</TD>
+    <TD class=3D"r data">64.50</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94119</TH>
+    <TD class=3D"r data">120</TD>
+    <TD class=3D"r data">0.36</TD>
+    <TD class=3D"r data">21589</TD>
+    <TD class=3D"r data">64.86</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94120</TH>
+    <TD class=3D"r data">106</TD>
+    <TD class=3D"r data">0.32</TD>
+    <TD class=3D"r data">21695</TD>
+    <TD class=3D"r data">65.18</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94121</TH>
+    <TD class=3D"r data">1596</TD>
+    <TD class=3D"r data">4.79</TD>
+    <TD class=3D"r data">23291</TD>
+    <TD class=3D"r data">69.97</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94122</TH>
+    <TD class=3D"r data">2109</TD>
+    <TD class=3D"r data">6.34</TD>
+    <TD class=3D"r data">25400</TD>
+    <TD class=3D"r data">76.31</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94123</TH>
+    <TD class=3D"r data">1121</TD>
+    <TD class=3D"r data">3.37</TD>
+    <TD class=3D"r data">26521</TD>
+    <TD class=3D"r data">79.68</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94124</TH>
+    <TD class=3D"r data">1170</TD>
+    <TD class=3D"r data">3.52</TD>
+    <TD class=3D"r data">27691</TD>
+    <TD class=3D"r data">83.19</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94125</TH>
+    <TD class=3D"r data">110</TD>
+    <TD class=3D"r data">0.33</TD>
+    <TD class=3D"r data">27801</TD>
+    <TD class=3D"r data">83.52</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94126</TH>
+    <TD class=3D"r data">138</TD>
+    <TD class=3D"r data">0.41</TD>
+    <TD class=3D"r data">27939</TD>
+    <TD class=3D"r data">83.94</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94127</TH>
+    <TD class=3D"r data">770</TD>
+    <TD class=3D"r data">2.31</TD>
+    <TD class=3D"r data">28709</TD>
+    <TD class=3D"r data">86.25</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94129</TH>
+    <TD class=3D"r data">62</TD>
+    <TD class=3D"r data">0.19</TD>
+    <TD class=3D"r data">28771</TD>
+    <TD class=3D"r data">86.44</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94130</TH>
+    <TD class=3D"r data">36</TD>
+    <TD class=3D"r data">0.11</TD>
+    <TD class=3D"r data">28807</TD>
+    <TD class=3D"r data">86.55</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94131</TH>
+    <TD class=3D"r data">1261</TD>
+    <TD class=3D"r data">3.79</TD>
+    <TD class=3D"r data">30068</TD>
+    <TD class=3D"r data">90.33</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94132</TH>
+    <TD class=3D"r data">967</TD>
+    <TD class=3D"r data">2.91</TD>
+    <TD class=3D"r data">31035</TD>
+    <TD class=3D"r data">93.24</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94133</TH>
+    <TD class=3D"r data">964</TD>
+    <TD class=3D"r data">2.90</TD>
+    <TD class=3D"r data">31999</TD>
+    <TD class=3D"r data">96.14</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94134</TH>
+    <TD class=3D"r data">1211</TD>
+    <TD class=3D"r data">3.64</TD>
+    <TD class=3D"r data">33210</TD>
+    <TD class=3D"r data">99.77</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94138</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33211</TD>
+    <TD class=3D"r data">99.78</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94142</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33212</TD>
+    <TD class=3D"r data">99.78</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94147</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">0.01</TD>
+    <TD class=3D"r data">33216</TD>
+    <TD class=3D"r data">99.79</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94158</TH>
+    <TD class=3D"r data">17</TD>
+    <TD class=3D"r data">0.05</TD>
+    <TD class=3D"r data">33233</TD>
+    <TD class=3D"r data">99.84</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94159</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33234</TD>
+    <TD class=3D"r data">99.85</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94160</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33235</TD>
+    <TD class=3D"r data">99.85</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94165</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33236</TD>
+    <TD class=3D"r data">99.85</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94199</TH>
+    <TD class=3D"r data">13</TD>
+    <TD class=3D"r data">0.04</TD>
+    <TD class=3D"r data">33249</TD>
+    <TD class=3D"r data">99.89</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>99999</TH>
+    <TD class=3D"r data">36</TD>
+    <TD class=3D"r data">0.11</TD>
+    <TD class=3D"r data">33285</TD>
+    <TD class=3D"r data">100.00</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class=3D"c b footer" colSpan=3D5>Frequency Missing =3D=20
+2521</TH></TR></TFOOT></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX2></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">Unquie =
+Zipcodes</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The SURVEYSELECT Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Surveyselect: Sample Selection Method" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Selection Method</TH>
+    <TD class=3D"r data">Simple Random=20
+Sampling</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=3DIDX3></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Surveyselect: Sample Selection Summary" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Input Data Set</TH>
+    <TD class=3D"r data">SFDATA</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Random Number Seed</TH>
+    <TD class=3D"r data">9649000</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Sample Size</TH>
+    <TD class=3D"r data">100</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Selection Probability</TH>
+    <TD class=3D"r data">0.002793</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Sampling Weight</TH>
+    <TD class=3D"r data">358.06</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Output Data Set</TH>
+    <TD class=3D"r =
+data">SIMPLERANDOM</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX4></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">Unquie =
+Zipcodes</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The FREQ Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Freq: One-Way Frequencies" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>zipcode</TH>
+    <TH class=3D"r b header" scope=3Dcol>Frequency</TH>
+    <TH class=3D"r b header" scope=3Dcol>Percent</TH>
+    <TH class=3D"r b header" scope=3Dcol>Cumulative<BR>Frequency</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Cumulative<BR>Percent</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94102</TH>
+    <TD class=3D"r data">8</TD>
+    <TD class=3D"r data">8.42</TD>
+    <TD class=3D"r data">8</TD>
+    <TD class=3D"r data">8.42</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94103</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">2.11</TD>
+    <TD class=3D"r data">10</TD>
+    <TD class=3D"r data">10.53</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94105</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.05</TD>
+    <TD class=3D"r data">11</TD>
+    <TD class=3D"r data">11.58</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94107</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">2.11</TD>
+    <TD class=3D"r data">13</TD>
+    <TD class=3D"r data">13.68</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94108</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.16</TD>
+    <TD class=3D"r data">16</TD>
+    <TD class=3D"r data">16.84</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94109</TH>
+    <TD class=3D"r data">7</TD>
+    <TD class=3D"r data">7.37</TD>
+    <TD class=3D"r data">23</TD>
+    <TD class=3D"r data">24.21</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94110</TH>
+    <TD class=3D"r data">7</TD>
+    <TD class=3D"r data">7.37</TD>
+    <TD class=3D"r data">30</TD>
+    <TD class=3D"r data">31.58</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94111</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.05</TD>
+    <TD class=3D"r data">31</TD>
+    <TD class=3D"r data">32.63</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94112</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">4.21</TD>
+    <TD class=3D"r data">35</TD>
+    <TD class=3D"r data">36.84</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94114</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">5.26</TD>
+    <TD class=3D"r data">40</TD>
+    <TD class=3D"r data">42.11</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94115</TH>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">6.32</TD>
+    <TD class=3D"r data">46</TD>
+    <TD class=3D"r data">48.42</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94116</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">4.21</TD>
+    <TD class=3D"r data">50</TD>
+    <TD class=3D"r data">52.63</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94117</TH>
+    <TD class=3D"r data">9</TD>
+    <TD class=3D"r data">9.47</TD>
+    <TD class=3D"r data">59</TD>
+    <TD class=3D"r data">62.11</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94118</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.16</TD>
+    <TD class=3D"r data">62</TD>
+    <TD class=3D"r data">65.26</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94119</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.05</TD>
+    <TD class=3D"r data">63</TD>
+    <TD class=3D"r data">66.32</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94121</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">4.21</TD>
+    <TD class=3D"r data">67</TD>
+    <TD class=3D"r data">70.53</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94122</TH>
+    <TD class=3D"r data">7</TD>
+    <TD class=3D"r data">7.37</TD>
+    <TD class=3D"r data">74</TD>
+    <TD class=3D"r data">77.89</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94123</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">4.21</TD>
+    <TD class=3D"r data">78</TD>
+    <TD class=3D"r data">82.11</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94124</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">4.21</TD>
+    <TD class=3D"r data">82</TD>
+    <TD class=3D"r data">86.32</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94127</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.05</TD>
+    <TD class=3D"r data">83</TD>
+    <TD class=3D"r data">87.37</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94129</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.05</TD>
+    <TD class=3D"r data">84</TD>
+    <TD class=3D"r data">88.42</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94131</TH>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">6.32</TD>
+    <TD class=3D"r data">90</TD>
+    <TD class=3D"r data">94.74</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94132</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">2.11</TD>
+    <TD class=3D"r data">92</TD>
+    <TD class=3D"r data">96.84</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94133</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.05</TD>
+    <TD class=3D"r data">93</TD>
+    <TD class=3D"r data">97.89</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94134</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.05</TD>
+    <TD class=3D"r data">94</TD>
+    <TD class=3D"r data">98.95</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94158</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.05</TD>
+    <TD class=3D"r data">95</TD>
+    <TD class=3D"r data">100.00</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class=3D"c b footer" colSpan=3D5>Frequency Missing =3D=20
+5</TH></TR></TFOOT></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX5></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">Unquie =
+Zipcodes</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The FREQ Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Freq: NLevels" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Number of =
+Variable=20
+    Levels</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Variable</TH>
+    <TH class=3D"r b header" scope=3Dcol>Levels</TH>
+    <TH class=3D"r b header" scope=3Dcol>Missing Levels</TH>
+    <TH class=3D"r b header" scope=3Dcol>Nonmissing =
+Levels</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>zipcode</TH>
+    <TD class=3D"r data">46</TD>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">45</TD></TR></TBODY></TABLE></DIV></DIV><BR><A =
+name=3DIDX6></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Freq: One-Way Frequencies" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>zipcode</TH>
+    <TH class=3D"r b header" scope=3Dcol>Frequency</TH>
+    <TH class=3D"r b header" scope=3Dcol>Percent</TH>
+    <TH class=3D"r b header" scope=3Dcol>Cumulative<BR>Frequency</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Cumulative<BR>Percent</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>88888</TH>
+    <TD class=3D"r data">8</TD>
+    <TD class=3D"r data">0.02</TD>
+    <TD class=3D"r data">8</TD>
+    <TD class=3D"r data">0.02</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94000</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">9</TD>
+    <TD class=3D"r data">0.03</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94014</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">0.01</TD>
+    <TD class=3D"r data">11</TD>
+    <TD class=3D"r data">0.03</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94101</TH>
+    <TD class=3D"r data">154</TD>
+    <TD class=3D"r data">0.46</TD>
+    <TD class=3D"r data">165</TD>
+    <TD class=3D"r data">0.50</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94102</TH>
+    <TD class=3D"r data">1349</TD>
+    <TD class=3D"r data">4.05</TD>
+    <TD class=3D"r data">1514</TD>
+    <TD class=3D"r data">4.55</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94103</TH>
+    <TD class=3D"r data">861</TD>
+    <TD class=3D"r data">2.59</TD>
+    <TD class=3D"r data">2375</TD>
+    <TD class=3D"r data">7.14</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94104</TH>
+    <TD class=3D"r data">39</TD>
+    <TD class=3D"r data">0.12</TD>
+    <TD class=3D"r data">2414</TD>
+    <TD class=3D"r data">7.25</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94105</TH>
+    <TD class=3D"r data">199</TD>
+    <TD class=3D"r data">0.60</TD>
+    <TD class=3D"r data">2613</TD>
+    <TD class=3D"r data">7.85</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94106</TH>
+    <TD class=3D"r data">43</TD>
+    <TD class=3D"r data">0.13</TD>
+    <TD class=3D"r data">2656</TD>
+    <TD class=3D"r data">7.98</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94107</TH>
+    <TD class=3D"r data">998</TD>
+    <TD class=3D"r data">3.00</TD>
+    <TD class=3D"r data">3654</TD>
+    <TD class=3D"r data">10.98</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94108</TH>
+    <TD class=3D"r data">854</TD>
+    <TD class=3D"r data">2.57</TD>
+    <TD class=3D"r data">4508</TD>
+    <TD class=3D"r data">13.54</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94109</TH>
+    <TD class=3D"r data">2273</TD>
+    <TD class=3D"r data">6.83</TD>
+    <TD class=3D"r data">6781</TD>
+    <TD class=3D"r data">20.37</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94110</TH>
+    <TD class=3D"r data">3240</TD>
+    <TD class=3D"r data">9.73</TD>
+    <TD class=3D"r data">10021</TD>
+    <TD class=3D"r data">30.11</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94111</TH>
+    <TD class=3D"r data">332</TD>
+    <TD class=3D"r data">1.00</TD>
+    <TD class=3D"r data">10353</TD>
+    <TD class=3D"r data">31.10</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94112</TH>
+    <TD class=3D"r data">2387</TD>
+    <TD class=3D"r data">7.17</TD>
+    <TD class=3D"r data">12740</TD>
+    <TD class=3D"r data">38.28</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94113</TH>
+    <TD class=3D"r data">200</TD>
+    <TD class=3D"r data">0.60</TD>
+    <TD class=3D"r data">12940</TD>
+    <TD class=3D"r data">38.88</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94114</TH>
+    <TD class=3D"r data">1741</TD>
+    <TD class=3D"r data">5.23</TD>
+    <TD class=3D"r data">14681</TD>
+    <TD class=3D"r data">44.11</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94115</TH>
+    <TD class=3D"r data">1462</TD>
+    <TD class=3D"r data">4.39</TD>
+    <TD class=3D"r data">16143</TD>
+    <TD class=3D"r data">48.50</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94116</TH>
+    <TD class=3D"r data">1777</TD>
+    <TD class=3D"r data">5.34</TD>
+    <TD class=3D"r data">17920</TD>
+    <TD class=3D"r data">53.84</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94117</TH>
+    <TD class=3D"r data">1954</TD>
+    <TD class=3D"r data">5.87</TD>
+    <TD class=3D"r data">19874</TD>
+    <TD class=3D"r data">59.71</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94118</TH>
+    <TD class=3D"r data">1595</TD>
+    <TD class=3D"r data">4.79</TD>
+    <TD class=3D"r data">21469</TD>
+    <TD class=3D"r data">64.50</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94119</TH>
+    <TD class=3D"r data">120</TD>
+    <TD class=3D"r data">0.36</TD>
+    <TD class=3D"r data">21589</TD>
+    <TD class=3D"r data">64.86</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94120</TH>
+    <TD class=3D"r data">106</TD>
+    <TD class=3D"r data">0.32</TD>
+    <TD class=3D"r data">21695</TD>
+    <TD class=3D"r data">65.18</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94121</TH>
+    <TD class=3D"r data">1596</TD>
+    <TD class=3D"r data">4.79</TD>
+    <TD class=3D"r data">23291</TD>
+    <TD class=3D"r data">69.97</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94122</TH>
+    <TD class=3D"r data">2109</TD>
+    <TD class=3D"r data">6.34</TD>
+    <TD class=3D"r data">25400</TD>
+    <TD class=3D"r data">76.31</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94123</TH>
+    <TD class=3D"r data">1121</TD>
+    <TD class=3D"r data">3.37</TD>
+    <TD class=3D"r data">26521</TD>
+    <TD class=3D"r data">79.68</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94124</TH>
+    <TD class=3D"r data">1170</TD>
+    <TD class=3D"r data">3.52</TD>
+    <TD class=3D"r data">27691</TD>
+    <TD class=3D"r data">83.19</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94125</TH>
+    <TD class=3D"r data">110</TD>
+    <TD class=3D"r data">0.33</TD>
+    <TD class=3D"r data">27801</TD>
+    <TD class=3D"r data">83.52</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94126</TH>
+    <TD class=3D"r data">138</TD>
+    <TD class=3D"r data">0.41</TD>
+    <TD class=3D"r data">27939</TD>
+    <TD class=3D"r data">83.94</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94127</TH>
+    <TD class=3D"r data">770</TD>
+    <TD class=3D"r data">2.31</TD>
+    <TD class=3D"r data">28709</TD>
+    <TD class=3D"r data">86.25</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94129</TH>
+    <TD class=3D"r data">62</TD>
+    <TD class=3D"r data">0.19</TD>
+    <TD class=3D"r data">28771</TD>
+    <TD class=3D"r data">86.44</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94130</TH>
+    <TD class=3D"r data">36</TD>
+    <TD class=3D"r data">0.11</TD>
+    <TD class=3D"r data">28807</TD>
+    <TD class=3D"r data">86.55</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94131</TH>
+    <TD class=3D"r data">1261</TD>
+    <TD class=3D"r data">3.79</TD>
+    <TD class=3D"r data">30068</TD>
+    <TD class=3D"r data">90.33</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94132</TH>
+    <TD class=3D"r data">967</TD>
+    <TD class=3D"r data">2.91</TD>
+    <TD class=3D"r data">31035</TD>
+    <TD class=3D"r data">93.24</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94133</TH>
+    <TD class=3D"r data">964</TD>
+    <TD class=3D"r data">2.90</TD>
+    <TD class=3D"r data">31999</TD>
+    <TD class=3D"r data">96.14</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94134</TH>
+    <TD class=3D"r data">1211</TD>
+    <TD class=3D"r data">3.64</TD>
+    <TD class=3D"r data">33210</TD>
+    <TD class=3D"r data">99.77</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94138</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33211</TD>
+    <TD class=3D"r data">99.78</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94142</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33212</TD>
+    <TD class=3D"r data">99.78</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94147</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">0.01</TD>
+    <TD class=3D"r data">33216</TD>
+    <TD class=3D"r data">99.79</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94158</TH>
+    <TD class=3D"r data">17</TD>
+    <TD class=3D"r data">0.05</TD>
+    <TD class=3D"r data">33233</TD>
+    <TD class=3D"r data">99.84</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94159</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33234</TD>
+    <TD class=3D"r data">99.85</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94160</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33235</TD>
+    <TD class=3D"r data">99.85</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94165</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.00</TD>
+    <TD class=3D"r data">33236</TD>
+    <TD class=3D"r data">99.85</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94199</TH>
+    <TD class=3D"r data">13</TD>
+    <TD class=3D"r data">0.04</TD>
+    <TD class=3D"r data">33249</TD>
+    <TD class=3D"r data">99.89</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>99999</TH>
+    <TD class=3D"r data">36</TD>
+    <TD class=3D"r data">0.11</TD>
+    <TD class=3D"r data">33285</TD>
+    <TD class=3D"r data">100.00</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class=3D"c b footer" colSpan=3D5>Frequency Missing =3D=20
+2521</TH></TR></TFOOT></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX7></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">Unquie =
+Zipcodes</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The SURVEYSELECT Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Surveyselect: Sample Selection Method" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Selection Method</TH>
+    <TD class=3D"r data">Simple Random=20
+Sampling</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=3DIDX8></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Surveyselect: Sample Selection Summary" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Input Data Set</TH>
+    <TD class=3D"r data">SFDATA</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Random Number Seed</TH>
+    <TD class=3D"r data">156157000</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Sample Size</TH>
+    <TD class=3D"r data">100</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Selection Probability</TH>
+    <TD class=3D"r data">0.002793</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Sampling Weight</TH>
+    <TD class=3D"r data">358.06</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Output Data Set</TH>
+    <TD class=3D"r =
+data">SIMPLERANDOM</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX9></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">Unquie =
+Zipcodes</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The FREQ Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Freq: One-Way Frequencies" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>zipcode</TH>
+    <TH class=3D"r b header" scope=3Dcol>Frequency</TH>
+    <TH class=3D"r b header" scope=3Dcol>Percent</TH>
+    <TH class=3D"r b header" scope=3Dcol>Cumulative<BR>Frequency</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Cumulative<BR>Percent</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94102</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">2.06</TD>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">2.06</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94103</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">4.12</TD>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">6.19</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94104</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.03</TD>
+    <TD class=3D"r data">7</TD>
+    <TD class=3D"r data">7.22</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94107</TH>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">6.19</TD>
+    <TD class=3D"r data">13</TD>
+    <TD class=3D"r data">13.40</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94108</TH>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">6.19</TD>
+    <TD class=3D"r data">19</TD>
+    <TD class=3D"r data">19.59</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94109</TH>
+    <TD class=3D"r data">10</TD>
+    <TD class=3D"r data">10.31</TD>
+    <TD class=3D"r data">29</TD>
+    <TD class=3D"r data">29.90</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94110</TH>
+    <TD class=3D"r data">9</TD>
+    <TD class=3D"r data">9.28</TD>
+    <TD class=3D"r data">38</TD>
+    <TD class=3D"r data">39.18</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94111</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.03</TD>
+    <TD class=3D"r data">39</TD>
+    <TD class=3D"r data">40.21</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94112</TH>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">6.19</TD>
+    <TD class=3D"r data">45</TD>
+    <TD class=3D"r data">46.39</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94113</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.03</TD>
+    <TD class=3D"r data">46</TD>
+    <TD class=3D"r data">47.42</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94114</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">5.15</TD>
+    <TD class=3D"r data">51</TD>
+    <TD class=3D"r data">52.58</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94115</TH>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">6.19</TD>
+    <TD class=3D"r data">57</TD>
+    <TD class=3D"r data">58.76</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94116</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.09</TD>
+    <TD class=3D"r data">60</TD>
+    <TD class=3D"r data">61.86</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94117</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">2.06</TD>
+    <TD class=3D"r data">62</TD>
+    <TD class=3D"r data">63.92</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94118</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.09</TD>
+    <TD class=3D"r data">65</TD>
+    <TD class=3D"r data">67.01</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94121</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.09</TD>
+    <TD class=3D"r data">68</TD>
+    <TD class=3D"r data">70.10</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94122</TH>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">6.19</TD>
+    <TD class=3D"r data">74</TD>
+    <TD class=3D"r data">76.29</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94123</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.09</TD>
+    <TD class=3D"r data">77</TD>
+    <TD class=3D"r data">79.38</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94124</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.09</TD>
+    <TD class=3D"r data">80</TD>
+    <TD class=3D"r data">82.47</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94126</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">1.03</TD>
+    <TD class=3D"r data">81</TD>
+    <TD class=3D"r data">83.51</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94127</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">4.12</TD>
+    <TD class=3D"r data">85</TD>
+    <TD class=3D"r data">87.63</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94131</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.09</TD>
+    <TD class=3D"r data">88</TD>
+    <TD class=3D"r data">90.72</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94132</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">3.09</TD>
+    <TD class=3D"r data">91</TD>
+    <TD class=3D"r data">93.81</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94133</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">2.06</TD>
+    <TD class=3D"r data">93</TD>
+    <TD class=3D"r data">95.88</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94134</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">4.12</TD>
+    <TD class=3D"r data">97</TD>
+    <TD class=3D"r data">100.00</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class=3D"c b footer" colSpan=3D5>Frequency Missing =3D=20
+3</TH></TR></TFOOT></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX10></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">Unquie =
+Zipcodes</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The SURVEYSELECT Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Surveyselect: Sample Selection Method" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Selection Method</TH>
+    <TD class=3D"r data">Simple Random Sampling</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Strata Variable</TH>
+    <TD class=3D"r =
+data">zipcode</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX11></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Surveyselect: Sample Selection Summary" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Input Data Set</TH>
+    <TD class=3D"r data">SFDATA</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Random Number Seed</TH>
+    <TD class=3D"r data">123</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Stratum Sample Size</TH>
+    <TD class=3D"r data">5</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Number of Strata</TH>
+    <TD class=3D"r data">38</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Total Sample Size</TH>
+    <TD class=3D"r data">190</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Output Data Set</TH>
+    <TD class=3D"r =
+data">STRATIFED</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX12></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">Unquie =
+Zipcodes</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The FREQ Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Freq: One-Way Frequencies" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>zipcode</TH>
+    <TH class=3D"r b header" scope=3Dcol>Frequency</TH>
+    <TH class=3D"r b header" scope=3Dcol>Percent</TH>
+    <TH class=3D"r b header" scope=3Dcol>Cumulative<BR>Frequency</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Cumulative<BR>Percent</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>88888</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94101</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">10</TD>
+    <TD class=3D"r data">5.41</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94102</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">15</TD>
+    <TD class=3D"r data">8.11</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94103</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">20</TD>
+    <TD class=3D"r data">10.81</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94104</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">25</TD>
+    <TD class=3D"r data">13.51</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94105</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">30</TD>
+    <TD class=3D"r data">16.22</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94106</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">35</TD>
+    <TD class=3D"r data">18.92</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94107</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">40</TD>
+    <TD class=3D"r data">21.62</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94108</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">45</TD>
+    <TD class=3D"r data">24.32</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94109</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">50</TD>
+    <TD class=3D"r data">27.03</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94110</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">55</TD>
+    <TD class=3D"r data">29.73</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94111</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">60</TD>
+    <TD class=3D"r data">32.43</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94112</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">65</TD>
+    <TD class=3D"r data">35.14</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94113</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">70</TD>
+    <TD class=3D"r data">37.84</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94114</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">75</TD>
+    <TD class=3D"r data">40.54</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94115</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">80</TD>
+    <TD class=3D"r data">43.24</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94116</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">85</TD>
+    <TD class=3D"r data">45.95</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94117</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">90</TD>
+    <TD class=3D"r data">48.65</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94118</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">95</TD>
+    <TD class=3D"r data">51.35</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94119</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">100</TD>
+    <TD class=3D"r data">54.05</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94120</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">105</TD>
+    <TD class=3D"r data">56.76</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94121</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">110</TD>
+    <TD class=3D"r data">59.46</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94122</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">115</TD>
+    <TD class=3D"r data">62.16</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94123</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">120</TD>
+    <TD class=3D"r data">64.86</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94124</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">125</TD>
+    <TD class=3D"r data">67.57</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94125</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">130</TD>
+    <TD class=3D"r data">70.27</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94126</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">135</TD>
+    <TD class=3D"r data">72.97</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94127</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">140</TD>
+    <TD class=3D"r data">75.68</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94129</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">145</TD>
+    <TD class=3D"r data">78.38</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94130</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">150</TD>
+    <TD class=3D"r data">81.08</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94131</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">155</TD>
+    <TD class=3D"r data">83.78</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94132</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">160</TD>
+    <TD class=3D"r data">86.49</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94133</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">165</TD>
+    <TD class=3D"r data">89.19</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94134</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">170</TD>
+    <TD class=3D"r data">91.89</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94158</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">175</TD>
+    <TD class=3D"r data">94.59</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>94199</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">180</TD>
+    <TD class=3D"r data">97.30</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>99999</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">2.70</TD>
+    <TD class=3D"r data">185</TD>
+    <TD class=3D"r data">100.00</TD></TR></TBODY>
+  <TFOOT>
+  <TR>
+    <TH class=3D"c b footer" colSpan=3D5>Frequency Missing =3D=20
+5</TH></TR></TFOOT></TABLE></DIV></DIV><BR></DIV></BODY></HTML>
