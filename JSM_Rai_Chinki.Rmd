@@ -1,0 +1,259 @@
+---
+title: "R Notebook"
+output:
+  html_notebook: default
+  pdf_document: default
+  html_document:
+    df_print: paged
+  word_document: default
+---
+
+JSM is Largest statistical event. This report is for Data Expo 2018.
+There are 3 data files, locations.csv, forecast.dat, and histWeather.csv.
+1- The locations.csv file is a comma separated value file that contains information on the cities for which the forecasts was made
+2- The forecast.dat file is a white space separated file with about 3 years worth of forecasts.  This file does not have a header row.  The first column is the city number corresponding to the row in the locations.csv file, so 1 means Eastport, Maine and 113 means Honolulu, Hawaii.
+
+3- The histWeather.csv file is a comma separated file with the historic measures of weather from the airports.
+
+ {r} [] (http://community.amstat.org/stat-computing/data-expo/data-expo-2018)
+ 
+
+
+
+```{r}
+#Imporing Forecast datafile
+library(readr)
+data1 <- read_csv("C:/Users/chink/Google Drive/Computational Statistics/5th Quater/Special Topics/JSM/forecast.dat", col_names = FALSE)
+```
+
+```{r}
+#Converting datafiles into columns 
+data1$a <- sapply(strsplit(as.character(data1$X1), " "), "[", 1)
+data1$b <- sapply(strsplit(as.character(data1$X1), " "), "[", 2)
+data1$c<- sapply(strsplit(as.character(data1$X1), " "), "[", 3)
+data1$d<- sapply(strsplit(as.character(data1$X1), " "), "[", 4)
+data1$e<- sapply(strsplit(as.character(data1$X1), " "), "[", 5)
+data1$c=as.numeric(data1$c)
+
+#Structure of dataframe
+str(data1)
+
+```
+
+```{r}
+#Reading Histweather data
+histWeather <- read_csv("C:/Users/chink/Google Drive/Computational Statistics/5th Quater/Special Topics/JSM/histWeather.csv")
+histWeather$CityCode=as.factor(histWeather$CityCode)
+histWeather$PrecipitationIn=as.integer(histWeather$PrecipitationIn)
+histWeather$AirPtCd=as.factor(histWeather$AirPtCd)
+
+#Structure of histweather data
+str(histWeather)
+```
+```{r}
+#Summary of variables
+summary(histWeather)
+```
+Max_TemperatureF has max value 211119.00.Which seems an outlier.
+```{r}
+#Finding the index of max variable
+which(histWeather$Max_TemperatureF==211119.00)
+```
+
+```{r}
+#Making month,year and day 
+library(lubridate)
+class(histWeather$Date)
+histWeather$dat=mdy(histWeather$Date)
+class(histWeather$dat)
+histWeather$month=month(histWeather$dat)
+histWeather$day=day(histWeather$dat)
+histWeather$year=year(histWeather$dat)
+```
+
+```{r}
+#Ploting Min_Temp
+library(ggplot2)
+ggplot(aes(x=Date,y=Min_TemperatureF),data=histWeather)+geom_line(col="green", size=1)
+```
+
+```{r}
+#ggplot of Min_TeamperaturF and month
+ggplot(aes(x=month,y=Min_TemperatureF),data=histWeather)+geom_point(col="green", size=1)+ylim(c(-150,150))+xlim(c(1,12))
+```
+
+
+
+```{r}
+#Summary of data1
+summary(data1)
+str(data1)
+data1$b=as.factor(data1$b)
+data1$d=as.factor(data1$d)
+str(data1)
+```
+
+
+```{r}
+#Tidy data
+#library(tidyr)
+data1=data1[c(2,3,5,4)]
+data1=as.data.frame(data1)
+summary(data1$c)
+data1[is.na(data1)]=0
+dim(data1)
+summary(data1$c)
+library(dplyr)
+library(tidyr)
+
+#Convertings row to column
+data2=data1 %>% group_by(d,b,a) %>% summarise_at(.vars = names(.)[4],.funs = c(mean="mean"))
+data3=data2 %>% spread(d,mean)
+
+
+
+write.table(data3, "C:/Users/chink/Google Drive/Computational Statistics/5th Quater/Special Topics/JSM/data3.txt", sep="\t")
+
+```
+```{r}
+#Renaming columns 
+names(data3)[names(data3)=='a']='CityCode'
+names(data3)[names(data3)=='b']='Date'
+names(data3)[names(data3)=='MinTemp']='P_MinTemp'
+names(data3)[names(data3)=='MaxTemp']='P_MaxTemp'
+names(data3)[names(data3)=='ProbPrecip']='P_ProbPrecip'
+
+```
+
+
+```{r}
+#Changing formate of histweather data date col
+histWeather$Date=as.Date(histWeather$Date,format = "%m/%d/%Y")
+
+#Creating final data with merging of hisweather and forcasted data
+library(plyr)
+final=merge(histWeather,data3,by=c("CityCode","Date"))
+```
+
+
+```{r}
+#Creating text file
+library(readxl)
+Prediction_work <- read_excel("C:/Users/chink/Google Drive/Computational Statistics/5th Quater/Special Topics/JSM/Prediction_work.xlsx")
+```
+
+```{r}
+#Dufference of Max temp actual and predicted value
+dif_Max_Temp=final$P_MaxTemp-final$Max_TemperatureF
+dif_Max_Temp=as.data.frame(dif_Max_Temp)
+summary(dif_Max_Temp)
+```
+```{r}
+#Predicted vrs Actaul 
+library(ggplot2)
+ggplot(final,aes(x=P_MaxTemp,y=Max_TemperatureF,col="red"))+geom_point()+xlim(-25,125)+ylim(0,100)+xlab("Predicted Max Temp")+ylab("Actual Max Temp")
+
+```
+```{r}
+#ploting diff and time
+final$dif11=final$Max_TemperatureF-final$P_MaxTemp
+ggplot(final,aes(x=Date,y=dif11,col="red"))+geom_line()+ylim(0,75)+xlab("Date")+ylab("Difference between predicted and Actual")
+```
+
+```{r}
+#ploting diff and time
+final$dif21=final$Min_TemperatureF-final$P_MinTemp
+ggplot(final,aes(x=Date,y=dif21,col="red"))+geom_line()+ylim(0,50)+xlab("Date")+ylab("Difference between predicted and Actual")
+```
+
+```{r}
+#ploting diff and time
+final$dif31=as.numeric(final$PrecipitationIn)-final$P_ProbPrecip
+ggplot(final,aes(x=Date,y=dif31,col="red"))+geom_line()+ylim(0,10)+xlab("Date")+ylab("Difference between predicted and Actual")
+```
+
+```{r}
+#Absolute Error between predicted and actual values of Max Temp
+final$dif12=abs(final$Max_TemperatureF-final$P_MaxTemp)
+final$dif22=abs(final$Min_TemperatureF-final$P_MinTemp)
+final$dif32=abs(as.numeric(final$PrecipitationIn)-final$P_ProbPrecip)
+
+
+#Square Error between predicted and actual values of Max Temp
+final$dif13=(final$Max_TemperatureF-final$P_MaxTemp)^2
+final$dif23=(final$Min_TemperatureF-final$P_MinTemp)^2
+final$dif33=(as.numeric(final$PrecipitationIn)-final$P_ProbPrecip)^2
+
+#Summary Statistics
+summary(final)
+
+```
+
+```{r}
+#MAE of temp
+MAE_Max_Temp=5.10
+MAE_Min_Temp=3.831
+MAE_prec=13.253
+
+#MSE of temp
+MSE_Max_Temp=3.589e+05 
+MSE_Min_Temp=27.314 
+MSE_prec=456.14 
+```
+MAE and MSE is higher for Max Temp becauses Max Temp has outliers.
+
+```{r}
+write.table(final, "C:/Users/chink/Google Drive/Computational Statistics/5th Quater/Special Topics/JSM/final.txt", sep="\t")
+```
+
+Lets try to find the distribution of errors 
+```{r}
+#"Histogram of Error of MaxTemp in F"
+library(ggplot2)
+ggplot(final,aes(dif11))+geom_histogram(col="red",fill='green')+xlim(c(-15,15))+xlab("Error of Max temp")
+```
+
+Plot is looking symmetric and bell shaped. normal distribution is justified distribution of error in Max Temp in F.
+
+```{r}
+#"Histogram of Error of MinTemp in F"
+ggplot(final,aes(dif21))+geom_histogram(col="red",fill='green')+xlim(c(-25,25))+xlab("Error of Min temp")
+```
+Plot is looking symmetric and bell shaped. normal distribution is justified distribution of error in Min Temp in F.
+
+```{r}
+#"Histogram of Error of MinTemp in F"
+ggplot(final,aes(dif31))+geom_histogram(col="red",fill='green')+xlim(c(-100,5))+xlab("Error of Min temp")
+```
+```{r}
+#Normal qq plot 
+qqnorm(final$dif31,col="green")
+```
+```{r}
+#Normalizing the data
+ normalize <- function(x) 
+  { 
+     return ((x - min(x)) / (max(x) - min(x)))
+  }
+#Removing NAs from data
+diff <- final$dif31[!is.na(final$dif31)]
+
+#Normalizing precip
+x=normalize(diff)
+
+summary(x)
+```
+
+```{r}
+#Density plot of precip
+plot(density(x),col="red")
+```
+
+
+
+![Distributions](https://magesblog.com/post/2011-12-01-fitting-distributions-with-r/)
+
+I think Minimum extrem is justified distribution for Error in precip.
+
+
+
